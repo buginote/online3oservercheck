@@ -1,0 +1,15 @@
+name: 'GitHub Actions 3ocheck Bot'
+
+on:
+  push:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout codes'
+        uses: actions/checkout@v1
+      - name: 'Get Result'
+        run: python3 ./3ocheck.py
