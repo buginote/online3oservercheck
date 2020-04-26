@@ -1,6 +1,6 @@
 name: 'GitHub Actions 3ocheck Bot'
 
-on:
+#on:
 #  push:
 #  schedule:
 #    - cron: '*/5 * * * *'
